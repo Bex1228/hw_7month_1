@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/camersFragment"
-        android:name="com.example.hw_7month_1.ui.camers.CamerasFragment"
+        android:name="com.example.hw_7month_1.camers.CamerasFragment"
         android:label="fragment_camers"
         tools:layout="@layout/fragment_cameras" />
     <fragment
         android:id="@+id/doorsFragment"
-        android:name="com.example.hw_7month_1.ui.doors.DoorsFragment"
+        android:name="com.example.hw_7month_1.doors.DoorsFragment"
         android:label="fragment_doors"
         tools:layout="@layout/fragment_doors" />
 </navigation>
