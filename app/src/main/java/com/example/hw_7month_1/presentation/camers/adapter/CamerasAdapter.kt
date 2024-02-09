@@ -1,4 +1,4 @@
-package com.example.hw_7month_1.camers.adapter
+package com.example.hw_7month_1.presentation.camers.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.example.hw_7month_1.databinding.ItemCamerasBinding
-import com.example.hw_7month_1.response.CamerasModel
+import com.example.hw_7month_1.data.response.CamerasModel
 
 class CamerasAdapter : ListAdapter<CamerasModel.Data.Camera, CameraViewHolder>(
     CameraDiffCallback()

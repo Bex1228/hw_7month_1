@@ -1,4 +1,4 @@
-package com.example.hw_7month_1.response
+package com.example.hw_7month_1.data.response
 
 import com.google.gson.annotations.SerializedName
 

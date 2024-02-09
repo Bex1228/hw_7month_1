@@ -1,4 +1,4 @@
-package com.example.hw_7month_1.response
+package com.example.hw_7month_1.data.response
 
 data class CamerasModel(
     val data: List<Data>,

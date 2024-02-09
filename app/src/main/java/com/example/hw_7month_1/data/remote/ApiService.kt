@@ -1,7 +1,7 @@
-package com.example.hw_7month_1.data
+package com.example.hw_7month_1.data.remote
 
-import com.example.hw_7month_1.response.CamerasModel
-import com.example.hw_7month_1.response.DoorsModel
+import com.example.hw_7month_1.data.response.CamerasModel
+import com.example.hw_7month_1.data.response.DoorsModel
 import retrofit2.Response
 import retrofit2.http.GET
 

@@ -1,6 +1,6 @@
 package com.example.hw_7month_1.di
 
-import com.example.hw_7month_1.data.ApiService
+import com.example.hw_7month_1.data.remote.ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -43,7 +43,7 @@ class AppModule {
     }
 
     @Provides
-    fun provideApiService(retrofit: Retrofit):ApiService{
+    fun provideApiService(retrofit: Retrofit): ApiService {
         return retrofit.create(ApiService::class.java)
     }
 }

@@ -1,10 +1,10 @@
-package com.example.hw_7month_1.camers
+package com.example.hw_7month_1.presentation.camers
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.example.hw_7month_1.data.Repository
-import com.example.hw_7month_1.data.Resource
-import com.example.hw_7month_1.response.CamerasModel
+import com.example.hw_7month_1.data.remote.Repository
+import com.example.hw_7month_1.data.remote.Resource
+import com.example.hw_7month_1.data.response.CamerasModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

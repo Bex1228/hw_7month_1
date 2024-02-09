@@ -1,9 +1,9 @@
-package com.example.hw_7month_1.data
+package com.example.hw_7month_1.data.remote
 
 import androidx.lifecycle.LiveData
-import com.example.hw_7month_1.base.BaseRepository
-import com.example.hw_7month_1.response.CamerasModel
-import com.example.hw_7month_1.response.DoorsModel
+import com.example.hw_7month_1.presentation.base.BaseRepository
+import com.example.hw_7month_1.data.response.CamerasModel
+import com.example.hw_7month_1.data.response.DoorsModel
 import javax.inject.Inject
 
 class Repository @Inject constructor(private val apiService: ApiService): BaseRepository(apiService) {

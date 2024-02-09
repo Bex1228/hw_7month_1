@@ -1,10 +1,10 @@
-package com.example.hw_7month_1
+package com.example.hw_7month_1.presentation.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.hw_7month_1.databinding.ActivityMainBinding
-import com.example.hw_7month_1.viewpager.ViewPagerAdapter
+import com.example.hw_7month_1.presentation.viewpager.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import dagger.hilt.android.AndroidEntryPoint
 

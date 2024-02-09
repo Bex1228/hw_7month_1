@@ -1,17 +1,15 @@
-package com.example.hw_7month_1.doors.adapter
+package com.example.hw_7month_1.presentation.doors.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.hw_7month_1.data.response.DoorsModel
 import com.example.hw_7month_1.databinding.ItemDoorsBinding
-import com.example.hw_7month_1.response.DoorsModel
 
 class DoorsAdapter: ListAdapter<DoorsModel.Data, DoorsViewHolder>(
     DoorDiffCallback()

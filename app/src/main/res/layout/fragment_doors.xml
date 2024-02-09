@@ -5,7 +5,7 @@
     android:id="@+id/swipeRefreshDoors"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".camers.CamerasFragment">
+    tools:context=".presentation.camers.CamerasFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

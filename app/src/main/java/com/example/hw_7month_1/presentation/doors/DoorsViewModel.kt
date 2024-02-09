@@ -1,10 +1,10 @@
-package com.example.hw_7month_1.doors
+package com.example.hw_7month_1.presentation.doors
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.example.hw_7month_1.data.Repository
-import com.example.hw_7month_1.data.Resource
-import com.example.hw_7month_1.response.DoorsModel
+import com.example.hw_7month_1.data.remote.Repository
+import com.example.hw_7month_1.data.remote.Resource
+import com.example.hw_7month_1.data.response.DoorsModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

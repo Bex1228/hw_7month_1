@@ -1,4 +1,4 @@
-package com.example.hw_7month_1.camers
+package com.example.hw_7month_1.presentation.doors
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,29 +6,28 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.hw_7month_1.base.BaseFragment
-import com.example.hw_7month_1.camers.adapter.CamerasAdapter
-import com.example.hw_7month_1.databinding.FragmentCamerasBinding
+import com.example.hw_7month_1.presentation.base.BaseFragment
+import com.example.hw_7month_1.databinding.FragmentDoorsBinding
+import com.example.hw_7month_1.presentation.doors.adapter.DoorsAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class CamerasFragment : BaseFragment() {
-    private lateinit var binding: FragmentCamerasBinding
-    private val viewModel: CamerasViewModel by viewModels()
-    private val adapter = CamerasAdapter()
-
+class DoorsFragment : BaseFragment() {
+    private lateinit var binding: FragmentDoorsBinding
+    private val viewModel: DoorsViewModel by viewModels()
+    private val adapter = DoorsAdapter()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentCamerasBinding.inflate(layoutInflater)
+        binding = FragmentDoorsBinding.inflate(layoutInflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         swipeRefresh()
-        viewModel.getCameras().stateHandler(
+        viewModel.getDoors().stateHandler(
             success = {
                 adapter.submitList(it)
                 setupAdapter()
@@ -37,16 +36,16 @@ class CamerasFragment : BaseFragment() {
     }
 
     private fun setupAdapter() {
-        binding.recyclerViewCameras.adapter = adapter
-        binding.recyclerViewCameras.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerViewDoors.adapter = adapter
+        binding.recyclerViewDoors.layoutManager = LinearLayoutManager(requireContext())
     }
 
     private fun swipeRefresh() {
-        binding.swipeRefreshCameras.setOnRefreshListener {
-            viewModel.getCameras().stateHandler(
+        binding.swipeRefreshDoors.setOnRefreshListener {
+            viewModel.getDoors().stateHandler(
                 success = {
                     adapter.submitList(it)
-                    binding.swipeRefreshCameras.isRefreshing = false
+                    binding.swipeRefreshDoors.isRefreshing = false
                 }
             )
         }

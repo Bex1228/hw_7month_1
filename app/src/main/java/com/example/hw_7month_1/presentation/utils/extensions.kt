@@ -1,6 +1,5 @@
-package com.example.hw_7month_1.utils
+package com.example.hw_7month_1.presentation.utils
 
-import android.content.Context
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 
