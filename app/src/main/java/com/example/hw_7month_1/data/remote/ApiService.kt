@@ -7,8 +7,8 @@ import retrofit2.http.GET
 
 interface ApiService {
     @GET("cameras")
-    suspend fun getCameras(): Response<List<CamerasModel.Data.Camera>>
+    suspend fun getCameras(): Response<CamerasModel>
 
     @GET("doors")
-    suspend fun getDoors():Response<List<DoorsModel.Data>>
+    suspend fun getDoors():Response<DoorsModel>
 }

@@ -2,7 +2,7 @@ package com.example.hw_7month_1.presentation.base
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LiveData
-import com.example.hw_7month_1.data.remote.Resource
+import com.example.hw_7month_1.data.Resource
 import com.example.hw_7month_1.presentation.utils.showToast
 
 abstract class BaseFragment:Fragment() {

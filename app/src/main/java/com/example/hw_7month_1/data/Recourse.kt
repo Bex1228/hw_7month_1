@@ -1,4 +1,4 @@
-package com.example.hw_7month_1.data.remote
+package com.example.hw_7month_1.data
 
 sealed class Resource<T>(
     val message:String ?= null,
