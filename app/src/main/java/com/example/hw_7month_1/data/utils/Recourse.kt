@@ -1,4 +1,4 @@
-package com.example.hw_7month_1.data
+package com.example.hw_7month_1.data.utils
 
 sealed class Resource<T>(
     val message:String ?= null,

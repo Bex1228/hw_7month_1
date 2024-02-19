@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.hw_7month_1.data.response.DoorsModel
+import com.example.hw_7month_1.domain.models.DoorsModel
 import com.example.hw_7month_1.databinding.ItemDoorsBinding
 
 class DoorsAdapter: ListAdapter<DoorsModel.Data, DoorsViewHolder>(

@@ -1,4 +1,4 @@
-package com.example.hw_7month_1.data.response
+package com.example.hw_7month_1.domain.models
 
 import com.google.gson.annotations.SerializedName
 

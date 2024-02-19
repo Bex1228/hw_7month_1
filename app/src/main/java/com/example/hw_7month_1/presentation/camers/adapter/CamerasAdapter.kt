@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.example.hw_7month_1.databinding.ItemCamerasBinding
-import com.example.hw_7month_1.data.response.CamerasModel
+import com.example.hw_7month_1.domain.models.CamerasModel
 
 class CamerasAdapter : ListAdapter<CamerasModel.Data.Camera, CameraViewHolder>(
     CameraDiffCallback()

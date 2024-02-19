@@ -1,9 +1,9 @@
 package com.example.hw_7month_1.domain.repositories
 
-import androidx.lifecycle.LiveData
-import com.example.hw_7month_1.data.Resource
-import com.example.hw_7month_1.data.response.CamerasModel
+import com.example.hw_7month_1.data.utils.Resource
+import com.example.hw_7month_1.domain.models.CamerasModel
+import kotlinx.coroutines.flow.Flow
 
 interface CamerasRepository {
-    fun getCameras(): LiveData<Resource<CamerasModel>>
+    suspend fun getCameras(): Flow<Resource<CamerasModel>>
 }
